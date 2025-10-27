@@ -62,4 +62,3 @@
 @vite(['resources/js/vendor.js'])
 @vite(['resources/js/app.js'])
 
-@yield('scripts')

@@ -13,7 +13,7 @@
     --color-success: var(--color-green-500);
     --color-info: var(--color-sky-500);
     --color-warning: var(--color-amber-500);
-    --color-danger: var(--color-orange-500);
+    --color-danger: var(--color-red-500);
 
     --color-default-50: var(--color-zinc-50);
     --color-default-100: var(--color-zinc-100);

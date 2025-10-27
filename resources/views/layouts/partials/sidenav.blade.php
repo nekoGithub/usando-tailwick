@@ -29,16 +29,30 @@
                 </li>
                 <li class="menu-item hs-accordion">
                     <a class="hs-accordion-toggle menu-link" href="javascript:void(0)">
-                        <span class="menu-icon"><i data-lucide="monitor-dot"></i></span>
-                        <span class="menu-text"> Dashboards </span>
+                        <span class="menu-icon"><i data-lucide="users"></i></span>
+                        <span class="menu-text"> Usuarios y Roles </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <ul class="sub-menu hs-accordion-content hidden">
                         <li class="menu-item">
-                            <a class="menu-link" href="/">
-                                <span class="menu-text"> Analytics </span>
+                            @can('profile')
+                                <a class="menu-link" href="{{ route('profile.edit') }}">
+                                    <span class="menu-text"> Perfil Usuario </span>
+                                </a>
+                            @endcan
+                        </li>
+                        <li class="menu-item">
+                            @can('app.users.index')
+                                <a class="menu-link" href="{{ route('users.index') }}">
+                                    <span class="menu-text"> Listar Usuarios </span>
+                                </a>
+                            @endcan
+                        </li>
+                        {{-- <li class="menu-item">
+                            <a class="menu-link" href="{{ route('profile.edit') }}">
+                                <span class="menu-text"> Roles </span>
                             </a>
-                        </li>                        
+                        </li>  --}}
                     </ul>
                 </li>
 
